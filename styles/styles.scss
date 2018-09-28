@@ -1,34 +1,65 @@
 // Boat Rocker Media - Pokemon Challenge
 //     James MacDonald
 //     started: 1:15pm Sept 28th 2018
+//     functionality complete: 7:00 pm
+
+//styles were done for the sake of readability and for the sake of dedicating more time to developing the code and ensuring all permutations of the data would run properly.
+
+//steps that would be taken in the future to add more visual appeal would be using SweetAlerts as they can be styled unlike regular alerts, designing the layout to be responsive on all devices, and adding in some css animations to add some excitement to seeing the pokemon compete (an example can be found on a portfolio piece on my website titled Havoc Of Heroes  
 
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+header{
+    background-color: darkgrey;
+    padding: 10px;
+}
 h1{
     text-align: center;
 }
-h3, h4, h5{
+h1, h2, h3, h4, h5{
     margin: 10px;
+}
+button{
+    border-radius: 10px;
+    border-color: black;
+    background-color: green;
+}
+button:disabled{
+    background-color: red;
+}
+.randomPokemon{
+    margin: 5px 0;
+    background-color: lightgray;
 }
 .pokemonSelect{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .pokemonInfo{
+        padding-top: 20px;
         text-align: center;
         flex-direction: column;
         flex: 1 0 50%;
         display: flex;
         align-items: center;
+        background-color: grey;
         img{
             height: 161px;
             width: 35%;
+            border-radius: 10px;
+            border-width: 3px;
+            border-style: solid;
         }
     }
+}
+.enemyPokemon img{
+    border-color: red;
+}
+.playerPokemon img{
+    border-color: green;
 }
 
 .pokeName, .pokeTypes{
@@ -43,5 +74,14 @@ h3, h4, h5{
 }
 
 .startBattle{
-    margin-top: 30px;
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: center;
+    background-color: darkgrey;
+    padding: 15px 0 ;
+}
+.battleResults{
+    text-align: center;
+    padding: 5px 0;
+    display: none;
 }

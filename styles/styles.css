@@ -132,11 +132,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+header {
+  background-color: darkgrey;
+  padding: 10px; }
+
 h1 {
   text-align: center; }
 
-h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   margin: 10px; }
+
+button {
+  border-radius: 10px;
+  border-color: black;
+  background-color: green; }
+
+button:disabled {
+  background-color: red; }
+
+.randomPokemon {
+  margin: 5px 0;
+  background-color: lightgray; }
 
 .pokemonSelect {
   display: -webkit-box;
@@ -148,6 +164,7 @@ h3, h4, h5 {
   -ms-flex-pack: center;
   justify-content: center; }
   .pokemonSelect .pokemonInfo {
+    padding-top: 20px;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -161,10 +178,20 @@ h3, h4, h5 {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    background-color: grey; }
     .pokemonSelect .pokemonInfo img {
       height: 161px;
-      width: 35%; }
+      width: 35%;
+      border-radius: 10px;
+      border-width: 3px;
+      border-style: solid; }
+
+.enemyPokemon img {
+  border-color: red; }
+
+.playerPokemon img {
+  border-color: green; }
 
 .pokeName, .pokeTypes {
   text-transform: capitalize; }
@@ -180,4 +207,19 @@ h3, h4, h5 {
     flex: 1 0 50%; }
 
 .startBattle {
-  margin-top: 30px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: darkgrey;
+  padding: 15px 0; }
+
+.battleResults {
+  text-align: center;
+  padding: 5px 0;
+  display: none; }
