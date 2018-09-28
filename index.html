@@ -1,0 +1,87 @@
+<!-- Boat Rocker Media - Pokemon Challenge
+    James MacDonald
+    started: 1:15pm Sept 28th 2018 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Boat Rocker Media - Pokemon Challenge</title>
+</head>
+<body>
+    <h1>Boat Rocker Media - Pokemon Challenge</h1>
+    <!-- display 2 sections, one for players pokemon, one for eemy pokemon -->
+    <!-- contain the same elements, but are selected through their parent section to differentiate -->
+    <main class="pokemonSelect">
+        <section class="playerPokemon pokemonInfo">
+            <img class="pokeImg" src="" alt="Players Pokemon choice">
+            <h3 class="pokeName">Name</h3>
+            <h4 class="pokeTypes">Types</h4>
+            <h4 class="pokeStats">Stats:</h5>
+            <div class="statList">
+                <div class="statNames">
+                    <h5>Speed:</h5>
+                    <h5>Special Defence:</h5>
+                    <h5>Special Attack:</h5>
+                    <h5>Defence:</h5>
+                    <h5>Attack:</h5>
+                    <h5>Hp:</h5>
+                </div>
+                <div class="statValues">
+                    <h5 class="speed">0</h5>
+                    <h5 class="special-defense">0</h5>
+                    <h5 class="special-attack">0</h5>
+                    <h5 class="defense">0</h5>
+                    <h5 class="attack">0</h5>
+                    <h5 class="hp">0</h5>
+                </div>
+            </div>
+        
+            <div class="playerSearch">
+                <input type="text" placeholder="Search for a pokemon by name or Pokedex num..." class="pokemonSearch">
+                <button class="findPokemon">Find Pokemon</button>
+                <button class="randomPokemon">Random Pokemon</button>
+            </div>
+        </section>
+        <section class="enemyPokemon pokemonInfo">
+            <img class="pokeImg" src="" alt="Enemys Pokemon choice">
+            <h3 class="pokeName">Name</h3>
+            <h4 class="pokeTypes">Types</h4>
+            <h5 class="pokeStats">Stats:</h5>
+            <div class="statList">
+                <div class="statNames">
+                    <h5>Speed:</h5>
+                    <h5>Special Defence:</h5>
+                    <h5>Special Attack:</h5>
+                    <h5>Defence:</h5>
+                    <h5>Attack:</h5>
+                    <h5>Hp:</h5>
+                </div>
+                <div class="statValues">
+                    <h5 class="speed">0</h5>
+                    <h5 class="special-defense">0</h5>
+                    <h5 class="special-attack">0</h5>
+                    <h5 class="defense">0</h5>
+                    <h5 class="attack">0</h5>
+                    <h5 class="hp">0</h5>
+                </div>
+            </div>
+            
+            <div class="enemySearch">
+                <input type="text" placeholder="Search for a pokemon by name or Pokedex num..." class="pokemonSearch">
+                <button class="findPokemon">Find Pokemon</button>
+                <button class="randomPokemon">Random Pokemon</button>
+            </div>
+        </section>
+        <div class="startBattle">
+            <button class="battleButton">Start Battle</button>
+        </div>
+    </main>
+    <!-- using jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
